@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: ECG Analysis Suite Documentation
+    url: https://github.com/chiragkansara/ecg-analysis/tree/main/docs
+    about: Check our documentation before creating an issue
+  - name: GitHub Community Support
+    url: https://github.com/orgs/community/discussions
+    about: Please ask and answer questions here
+  - name: Contact the Author
+    url: https://www.indapoint.com/
+    about: Please contact the author for direct support

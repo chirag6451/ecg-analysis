@@ -175,18 +175,17 @@ def launch_app(app_file, port):
 
 # Function to process documentation content
 def process_documentation(content):
-    """Replace any MIT License references with proprietary license information."""
-    # Replace MIT License references
-    content = content.replace("MIT License", "Proprietary License")
-    content = content.replace("This application is distributed under the MIT License", 
-                             "This application is proprietary software owned by IndaPoint Technologies Private Limited")
-    content = content.replace("Open-source", "Proprietary")
-    content = content.replace("open-source", "proprietary")
-    content = content.replace("MIT", "Proprietary")
+    """Update license information to MIT License."""
+    # Replace proprietary license references with MIT
+    content = content.replace("Proprietary License", "MIT License")
+    content = content.replace("This application is proprietary software owned by IndaPoint Technologies Private Limited", 
+                             "This application is distributed under the MIT License")
+    content = content.replace("Proprietary", "MIT")
+    content = content.replace("proprietary", "open-source")
     
     # Add copyright footer if not present
-    if "© 2025 IndaPoint Technologies" not in content:
-        content += "\n\n---\n© 2025 IndaPoint Technologies Private Limited. All Rights Reserved.\nProprietary and Confidential."
+    if " 2025 Chirag Kansara/Ahmedabadi" not in content:
+        content += "\n\n---\n 2025 Chirag Kansara/Ahmedabadi, IndaPoint Technologies Private Limited. Licensed under MIT License."
     
     return content
 
@@ -349,8 +348,7 @@ st.sidebar.markdown("""
 - Streamlit
 - NumPy/Pandas
 - Matplotlib/Plotly
-- NeuroKit2 (optional)
-- BiospPy (optional)
+- NeuroKit2
 """)
 
 st.sidebar.title("Documentation")
@@ -362,14 +360,14 @@ You can view documentation directly from each app card by clicking "View Documen
 # License information
 st.sidebar.title("License")
 st.sidebar.info("""
-© 2025 IndaPoint Technologies Private Limited. All Rights Reserved.
-Proprietary and Confidential. Unauthorized copying of this software, via any medium is strictly prohibited.
+ 2025 Chirag Kansara/Ahmedabadi, IndaPoint Technologies Private Limited.
+Licensed under MIT License. See LICENSE file for details.
 """)
 
 # Footer
 st.markdown("---")
 st.markdown("""
 <div style="text-align: center; color: #757575; font-size: 12px;">
-    ECG Analysis Suite Launcher • © 2025 IndaPoint Technologies Private Limited • All Rights Reserved • Proprietary Software
+    ECG Analysis Suite Launcher •  2025 Chirag Kansara/Ahmedabadi, IndaPoint Technologies Private Limited • MIT License
 </div>
 """, unsafe_allow_html=True) 

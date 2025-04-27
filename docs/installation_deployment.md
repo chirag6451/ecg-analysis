@@ -352,5 +352,5 @@ sudo cp /etc/systemd/system/ecg-launcher.service /etc/systemd/system/ecg-launche
 
 ---
 
-© 2025 IndaPoint Technologies Private Limited. All Rights Reserved.
-Proprietary and Confidential. 
+ 2025 Chirag Kansara/Ahmedabadi, IndaPoint Technologies Private Limited.
+Licensed under MIT License. See LICENSE file for details.

@@ -1,4 +1,4 @@
-# Python bytecode
+# Python bytecode and compiled files
 __pycache__/
 *.py[cod]
 *$py.class
@@ -9,12 +9,15 @@ __pycache__/
 dist/
 build/
 *.egg-info/
+*.egg
 
 # Virtual environments
 venv/
 env/
 ENV/
 .venv/
+.env/
+virtualenv/
 
 # Environment variables
 .env
@@ -27,11 +30,16 @@ ENV/
 *.swo
 *.sublime-workspace
 *.sublime-project
+.spyderproject
+.spyproject
+.ropeproject
 
 # OS specific files
 .DS_Store
 Thumbs.db
 desktop.ini
+*.lnk
+.directory
 
 # Jupyter Notebook
 .ipynb_checkpoints
@@ -42,6 +50,10 @@ desktop.ini
 htmlcov/
 .pytest_cache/
 .tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
 
 # ECG specific files
 *.edf
@@ -49,6 +61,32 @@ htmlcov/
 *.hea
 *.mit
 tmp/
+
+# Large files
+*.zip
+edf-data.zip
+edf-data/
+*.gz
+*.tar
+*.rar
+*.7z
+*.iso
+*.dmg
+*.bin
+*.exe
+*.pdf
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wav
+*.mp3
+*.flac
+*.tiff
+*.tif
+*.psd
+*.ai
+*.eps
 
 # Data and models
 data/
@@ -60,6 +98,12 @@ models/
 *.joblib
 *.npy
 *.npz
+*.pt
+*.pth
+*.onnx
+*.pb
+*.tflite
+*.mlmodel
 
 # Streamlit
 .streamlit/secrets.toml
@@ -70,13 +114,37 @@ logs/
 *.log
 output/
 results/
+*.out
+*.err
 
 # Temporary files
 tmp*/
 temp*/
 .tmp/
 .temp/
+*.tmp
+*.temp
+*.bak
+
+# Sensitive data
+*_credentials.*
+*_secret.*
+*_key.*
+*api_key*
+*password*
+*credential*
+*token*
+*auth*
+*secret*
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
 
 # Other
 .backup/
-*~ 
+*~
+.history/
+.cache/
+.local/
